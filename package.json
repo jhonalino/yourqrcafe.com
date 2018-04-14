@@ -1,0 +1,26 @@
+{
+  "name": "your-qr-cafe",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "normalize.css": "^8.0.0",
+    "qs": "^6.5.1",
+    "query-string": "^6.0.0",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && firebase deploy",
+    "firebase-init": "firebase login && firebase init"
+  },
+  "devDependencies": {
+    "firebase-tools": "^3.17.7"
+  }
+}
