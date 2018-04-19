@@ -109,7 +109,7 @@ const Tips = () => (
 );
 
 const About = () => (
-  <section className="section section-banner shaded">
+  <section className="section section-banner shaded about">
     <div className="container">
       <h1 className="title">ABOUT</h1>
       <h2 className="subtitle">
@@ -132,7 +132,17 @@ const Contact = () => (
 );
 
 class App extends Component {
+  state = {
+    resultData: {}
+  };
+  generateCodeHandler = data => {
+    this.setState(() => ({
+      resultData: data
+    }));
+  };
+
   render() {
+    let { resultData } = this.state;
     return (
       <Router>
         <div className="App">
@@ -149,9 +159,14 @@ class App extends Component {
                         <div className="main">
                           <div className="main-left">
                             <QrMenu {...props} />
-                            <FormContainer {...props} />
+                            <FormContainer
+                              generateCode={this.generateCodeHandler}
+                              {...props}
+                            />
                           </div>
-                          <Results {...props} />
+                          <div className="main-right">
+                            <Results {...props} data={resultData} />
+                          </div>
                         </div>
                       </div>
                       <About />
@@ -162,7 +177,7 @@ class App extends Component {
                   ) : (
                     <Redirect
                       to={{
-                        pathname: "./",
+                        pathname: "/",
                         search: "type=url"
                       }}
                     />

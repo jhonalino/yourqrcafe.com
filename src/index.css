@@ -88,6 +88,10 @@ button {
   margin-bottom: 2rem;
 }
 
+.section-banner.about h2 {
+  text-align: center;
+}
+
 /*FOOTER*/
 footer {
   padding-bottom: 2rem;

@@ -21,7 +21,7 @@ export default function EmailForm(props) {
                     <textarea name='message' className="textarea"></textarea>
                 </div>
             </div>
-            {/* <button type='submit' className="button">Generate Code</button> */}
+            {props.children}
         </form>
     )
 }

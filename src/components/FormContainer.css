@@ -14,3 +14,15 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.generate-code-btn {
+  background-color: #3369ff;
+  background: linear-gradient(45deg, #3369ff 10%, #05eeff 90%);
+}
+
+.button,
+.button:hover,
+.button:focus,
+.button:active {
+  color: white;
+}

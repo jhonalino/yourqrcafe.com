@@ -1,4 +1,5 @@
 .main-container {
+  background-color: #3369ff;
   background: linear-gradient(90deg, #3369ff 15%, #05d5ff 70%, #a6ffcb 94%);
   padding: 1rem;
   margin-top: 0.03rem;
@@ -14,11 +15,15 @@
 
 @media screen and (min-width: 600px) {
   .main {
-      flex-direction: row;
+    flex-direction: row;
   }
 
   .main .main-left {
     flex: 1 70%;
+  }
+
+  .main .main-right {
+    flex: 0;
   }
 }
 @media screen and (min-width: 1000px) {
