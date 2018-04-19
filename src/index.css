@@ -11,3 +11,116 @@ ul {
 button {
   border: none;
 }
+
+/* NAVBAR */
+.navbar {
+  background: #3369ff;
+  background: linear-gradient(150deg, #3369ff 15%, #05d5ff 70%, #a6ffcb 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.navbar h1 {
+  color: white;
+  text-align: center;
+  font-family: "Handlee", cursive;
+  font-weight: bold;
+}
+
+/* QR-MENU */
+.qr-menu {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.qr-menu-item {
+  flex: 1 33%;
+}
+
+.qr-menu-item .link {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  text-decoration: none;
+  color: black;
+  color: #727a7c;
+}
+
+.qr-menu-item .link:hover {
+  color: #75b5ff;
+}
+
+.qr-menu-item .link.active {
+  color: #057aff;
+}
+
+.qr-menu-item .link i {
+  font-size: 2rem;
+}
+
+/*SECTION BANNER*/
+.section-banner.shaded {
+  background: #fafafa;
+  position: relative;
+  z-index: 1;
+}
+
+.section-banner .title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #24b47e;
+}
+
+.section-banner.faq .subtitle {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.section-banner.faq p {
+  margin-bottom: 2rem;
+}
+
+/*FOOTER*/
+footer {
+  padding-bottom: 2rem;
+  background-color: rgb(207, 206, 206);
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+footer ul li {
+  list-style-type: none;
+  display: block;
+  margin: 0;
+}
+
+footer a {
+  color: rgb(95, 95, 95);
+}
+
+footer h6 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+footer .credit {
+  margin-top: 2rem;
+}
+
+.box {
+  margin: 1rem;
+}

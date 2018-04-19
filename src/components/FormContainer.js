@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom'
 import qs from 'qs';
 import qrTypes from './qrTypes';
+import "./FormContainer.css";
 
 export default class FormContainer extends Component {
     state = {
@@ -44,7 +45,7 @@ export default class FormContainer extends Component {
         }
 
         return (
-            <div>
+            <div className='box'>
                 {qrTypes.map(({ name, form: Form }) => {
                     return formName === name
                         ? <Form key={name} handleSubmit={this.handleSubmit} />

@@ -22,7 +22,7 @@ export default class Results extends Component {
 
         let svgUri = qrHelper.encodeDataToSvgUri(parsedData)
         return (
-            <div className='container-results'>
+            <div className='box container-results'>
                 {/* <div className="encoded-data">
                     <p className='has-text-centered is-uppercase has-text-weight-bold'>Encoded Data: {parsedData.type}</p>
                     <br />

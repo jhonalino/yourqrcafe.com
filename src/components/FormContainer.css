@@ -1,0 +1,16 @@
+.content-form {
+  margin: 0 2rem;
+}
+
+.content-form {
+  margin: 0;
+}
+
+.content-form .field {
+  width: 100%;
+}
+
+.content-form {
+  display: flex;
+  flex-wrap: wrap;
+}
