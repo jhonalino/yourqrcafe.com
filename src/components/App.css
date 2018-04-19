@@ -23,7 +23,7 @@
   }
 
   .main .main-right {
-    flex: 0;
+    flex: 1;
   }
 }
 @media screen and (min-width: 1000px) {
