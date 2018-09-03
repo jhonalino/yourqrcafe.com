@@ -185,10 +185,10 @@ class App extends Component {
                 </div>
               )}
             />
-            <Route path="/us/cookie-policy" component={CookiePolicy} />
+            {/* <Route path="/us/cookie-policy" component={CookiePolicy} />
             <Route path="/us/disclaimer" component={Disclaimer} />
             <Route path="/us/privacy-policy" component={PrivacyPolicy} />
-            <Route path="/us/terms-of-use" component={TermsCondition} />
+            <Route path="/us/terms-of-use" component={TermsCondition} /> */}
             {/* uncomment after implementing subscription */}
             {/* <Route path='/us/return-policy' component={ReturnPolicy} /> */}
           </Switch>
@@ -197,7 +197,7 @@ class App extends Component {
               <div className="content has-text-centered">
                 <i style={{ fontFamily: ["Handlee", "cursive"] }}>Yourqrcafe</i>{" "}
                 by <a href="https://jhonalino.com/">Jhon Alino</a>
-                <h6>RESOURCES</h6>
+                {/* <h6>RESOURCES</h6>
                 <ul>
                   <li>
                     <Link to="/us/disclaimer">Disclaimer</Link>
@@ -211,7 +211,7 @@ class App extends Component {
                   <li>
                     <Link to="/us/terms-of-use">Terms</Link>
                   </li>
-                </ul>
+                </ul> */}
                 <p className="credit">
                   QR Code is a registered trademark of denso wave incorporated
                 </p>
